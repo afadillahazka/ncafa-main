@@ -1,0 +1,167 @@
+---
+import AlbumPhotos from '../components/AlbumPhotos.astro';
+import ButtonLink from '../components/ButtonLink.astro';
+import ContactDetails from '../components/ContactDetails.astro';
+import DateDetails from '../components/DateDetails.astro';
+import Heading1 from '../components/Heading1.astro';
+import Heading2 from '../components/Heading2.astro';
+import Jumbotron from '../components/Jumbotron.astro';
+import ModeratorsDetails from '../components/ModeratorsDetails.astro';
+import Paragraph from '../components/Paragraph.astro';
+import PriceDetails from '../components/PriceDetails.astro';
+import SpeakersDetails from '../components/SpeakersDetails.astro';
+import AlbumContainerLarge from '../layouts/Album/AlbumContainer-Large.astro';
+import AlbumContainerSmall from '../layouts/Album/AlbumContainer-Small.astro';
+import AlbumContainer from '../layouts/Album/AlbumContainer.astro';
+import ButtonContainer from '../layouts/Button/ButtonContainer.astro';
+import ContactContainer from '../layouts/Contact/ContactContainer.astro';
+import Container from '../layouts/Container.astro';
+import Layout from '../layouts/Layout.astro';
+import ModeratorContainer from '../layouts/Moderator/ModeratorContainer.astro';
+import PriceContainer from '../layouts/Price/PriceContainer.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Jumbotron />
+		<Container>
+			<Paragraph 
+				paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi quos, laudantium amet nobis consectetur cupiditate excepturi quibusdam ducimus molestiae quisquam est mollitia veniam aliquid repudiandae harum culpa consequatur! Reiciendis nihil consectetur voluptate consequatur, molestiae facere perspiciatis neque vero itaque atque deserunt voluptatem fuga porro? Laboriosam quaerat iure quasi est reprehenderit amet iusto aut, aliquid exercitationem repudiandae, neque illo. Delectus mollitia et eveniet cum optio nobis, quam vero dolores, vitae corporis dolorem quasi minima iure dolor corrupti veniam quos, eius earum maiores eligendi ducimus suscipit modi placeat? Fugit aliquid suscipit architecto debitis minus, corrupti dolore ad facere atque exercitationem pariatur labore error sequi iure doloremque quam. Tempora, cum officia voluptas odit modi molestiae laboriosam repellat, voluptates accusamus facilis recusandae excepturi placeat architecto mollitia porro ab eveniet, quaerat deleniti magni beatae! Iste dignissimos necessitatibus, dolore quidem aliquid ab consequatur doloribus quas commodi praesentium mollitia deserunt obcaecati, neque modi provident eligendi tempora laboriosam itaque. Tempora, vel. Hic nisi minus provident, alias recusandae cum, quidem amet illum dolore commodi, harum delectus consequatur. Facilis iure neque recusandae illo sit quis modi ab eius facere quaerat dolor iste aut veritatis nemo id ratione ea eaque corporis, eveniet quia tempore veniam temporibus mollitia sunt? Esse odit culpa molestias doloribus laborum saepe, eum aperiam, rem repellat illum sed iure quisquam tempora. Quisquam libero eos non. Cumque, repellat, quasi perspiciatis libero natus illum vitae consequatur repudiandae id tenetur at quod nam laudantium rem quia quaerat laboriosam cum blanditiis accusantium. Veniam obcaecati ipsa maxime libero ab, exercitationem soluta necessitatibus."
+			/>
+		</Container>
+		<Container class="">
+			<Heading1 text="Narasumber" />
+			<SpeakersDetails 
+				src="https://ncafatrilogi.id/moderator/Dr.Anies.png"
+				alt="Dr. Anies"
+				name="Dr. Anies"
+				description="Warek 2"
+			/>
+			<SpeakersDetails 
+				src="https://ncafatrilogi.id/moderator/Dr.Anies.png"
+				alt="Dr. Anies"
+				name="Dr. Anies"
+				description="Warek 2"
+			/>
+		</Container>
+		<Container>
+			<Heading1 text="Moderator" />
+			<ModeratorContainer>
+				<ModeratorsDetails />
+				<ModeratorsDetails />
+			</ModeratorContainer>
+		</Container>
+		<Container>
+			<Heading1 text="Contact Us"/>
+			<ContactContainer>
+				<ContactDetails
+					media="WhatsApp"
+					text="4287462"
+					text2="4287462"
+					href="https://wa.me/6285156181049"
+				/>
+				<ContactDetails
+					media="WhatsApp"
+					text="4287462"
+					text2="4287462"
+					href="https://wa.me/6285156181049"
+				/>
+				<ContactDetails
+					media="WhatsApp"
+					text="4287462"
+					text2="4287462"
+					href="https://wa.me/6285156181049"
+				/>
+			</ContactContainer>
+		</Container>
+		<Container>
+			<Heading1 text="Price"/>
+			<PriceContainer>
+				<PriceDetails 
+					category="Hybrid"
+					price="IDR 500,000"
+				/>
+			</PriceContainer>
+			<ButtonContainer>
+				<ButtonLink 
+					href="https://drive.google.com/uc?export=download&id=1zyFj2uHUzykWw_QIfSqejXENNNkJ_Mt0"
+					class="bi bi-download"
+					title="Unduh"
+					description="Lorem5"
+				/>
+				<ButtonLink 
+					href="https://drive.google.com/uc?export=download&id=1zyFj2uHUzykWw_QIfSqejXENNNkJ_Mt0"
+					class="bi bi-download"
+					title="Unduh"
+					description="Lorem5"
+				/>
+				<ButtonLink 
+					href="https://drive.google.com/uc?export=download&id=1zyFj2uHUzykWw_QIfSqejXENNNkJ_Mt0"
+					class="bi bi-download"
+					title="Unduh"
+					description="Lorem5"
+				/>
+			</ButtonContainer>
+		</Container>
+		<Container>
+			<Heading1 text="Date"/>
+			<DateDetails 
+				timeline="Submission"
+				date="16 Januari 2023"
+				time="23.59 WIB"
+			/>
+		</Container>
+		<Container>
+			<Heading2 text="Platinum Sponsors"/>
+			<AlbumContainer>
+				<AlbumContainerLarge>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+				</AlbumContainerLarge>
+			</AlbumContainer>
+			<Heading2 text="Platinum Sponsors"/>
+			<AlbumContainer>
+				<AlbumContainerSmall>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+				</AlbumContainerSmall>
+			</AlbumContainer>
+		</Container>
+	</main>
+</Layout>

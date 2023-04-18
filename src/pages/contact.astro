@@ -1,0 +1,46 @@
+---
+import ContactDetails from '../components/ContactDetails.astro';
+import ContactContainer from '../layouts/Contact/ContactContainer.astro';
+import ContactContainerFH from '../layouts/Contact/ContactContainerFH.astro';
+import Container from '../layouts/Container.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Container>
+            <ContactContainerFH>
+                <ContactDetails 
+                    media="Call for Paper"
+                    href="https://www.instagram.com"
+                    text="+62 851 5618 1049 (Aditya)"
+                    text2="+62 851 5618 1049 (Aditya)"
+                />
+                <ContactDetails 
+                    media="Seminar"
+                    href="https"
+                    text="+62 851 5618 1049 (Aditya)"
+                    text2="blank"
+                />
+                <ContactDetails 
+                    media="Co-Host"
+                    href="https"
+                    text="+62 851 5618 1049 (Aditya)"
+                    text2=" "
+                    />
+                <ContactDetails 
+                    media="Sponsorship"
+                    href="https"
+                    text="+62 851 5618 1049 (Aditya)"
+                    text2=" "
+                    />
+                <ContactDetails 
+                    media="Partnership"
+                    href="https"
+                    text="+62 851 5618 1049 (Aditya)"
+                    text2=" "
+                    />
+            </ContactContainerFH>
+		</Container>
+	</main>
+</Layout>

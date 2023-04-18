@@ -1,0 +1,26 @@
+---
+export interface Props {
+    href: string;
+    class: string;
+    title: string;
+    description: string;
+}
+
+const {href, class: className, title, description} = Astro.props
+---
+
+<a
+    href={href}
+    class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center"
+    aria-current="true"
+>
+    <i class={className}></i>
+    <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+            <h6 class="mb-0">{title}</h6>
+            <p class="mb-0 opacity-75">
+                {description}
+            </p>
+        </div>
+    </div>
+</a>

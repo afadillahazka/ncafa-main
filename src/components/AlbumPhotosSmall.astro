@@ -1,0 +1,18 @@
+---
+export interface Props {
+    src: string;
+    alt: string;
+}
+
+const { src, alt } = Astro.props
+---
+<div class="col">
+    <div class="d-flex justify-content-center">
+        <img
+            src={ src }
+            alt= { alt }
+            width="45%"
+            height="45%"
+        />
+    </div>
+</div>

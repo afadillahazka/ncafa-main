@@ -1,0 +1,18 @@
+---
+export interface Props {
+    category: string;
+    price: string;
+}
+
+const { category, price } = Astro.props
+---
+<div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">{ category }</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">{ price }</h1>
+      </div>
+    </div>
+  </div>

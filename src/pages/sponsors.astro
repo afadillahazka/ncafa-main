@@ -1,0 +1,126 @@
+---
+import AlbumPhotos from '../components/AlbumPhotos.astro';
+import AlbumPhotosSmall from '../components/AlbumPhotosSmall.astro';
+import Heading2 from '../components/Heading2.astro';
+import AlbumContainerLarge from '../layouts/Album/AlbumContainer-Large.astro';
+import AlbumContainerMedium from '../layouts/Album/AlbumContainer-Medium.astro';
+import AlbumContainerSmall from '../layouts/Album/AlbumContainer-Small.astro';
+import AlbumContainerExtraSmall from '../layouts/Album/AlbumContainer-ExtraSmall.astro';
+import AlbumContainer from '../layouts/Album/AlbumContainer.astro';
+import Container from '../layouts/Container.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Platinum Sponsors"/>
+				<AlbumContainerLarge>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/bankindonesia2.png"
+						alt="Bank Indonesia"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/angkasapura2.png"
+						alt="Angkasa Pura 2"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/ptpii.png"
+						alt="PT PII"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/indosatooredoo.png"
+						alt="Indosat Ooredeoo"
+					/>
+					<AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/klinikaku2.png"
+						alt="Klinik Aku"
+					/>
+				</AlbumContainerLarge>
+			</AlbumContainer>
+        </Container>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Silver Sponsors"/>
+                <AlbumContainerMedium>
+                    <AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/kapsriyadi.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="https://ncafatrilogi.id/sponsors/sayurbox.png"
+						alt="Sayurbox"
+					/>
+                </AlbumContainerMedium>
+            </AlbumContainer>
+		</Container>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Bronze Sponsors"/>
+				<AlbumContainerSmall>
+                    <AlbumPhotos 
+                    src="https://ncafatrilogi.id/sponsors/wardah.png"
+                    alt="Bank Indonesia"
+					/>
+				</AlbumContainerSmall>
+			</AlbumContainer>
+		</Container>
+        <div style="height: 5vh;"></div>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Media Partners"/>
+				<AlbumContainerExtraSmall>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/eventcampus2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/eventcenter2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/eventdetect2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/eventkampus2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/eventnyamahasiswa2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/ikutevent2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/infolomba.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/infolombaekonomi2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/lombamahasiswa.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/olimpiadeupdate2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/pointkampus2.png"
+                    alt="Bank Indonesia"
+					/>
+                    <AlbumPhotosSmall 
+                    src="https://ncafatrilogi.id/mediapartner/sejutacita.png"
+                    alt="Bank Indonesia"
+					/>
+				</AlbumContainerExtraSmall>
+			</AlbumContainer>
+		</Container>
+	</main>
+</Layout>
