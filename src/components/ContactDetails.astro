@@ -12,7 +12,7 @@ const { media, text, text2, href } = Astro.props
 <div class="col text-center d-flex flex-column justify-content-center">
     <h3 class="fs-2 fw-bold">{ media }</h3>
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <a target="_blank" href={ href } class="icon-link"> { text } </a>
-        <a rel="prefetch" href={ href } class="icon-link"> { text2 }</a>
+        <a href={ href } class="icon-link"> { text }</a>
+        <a href={ href } class="icon-link"> { text2 }</a>
     </div>
 </div>
