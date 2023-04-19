@@ -1,0 +1,215 @@
+---
+import AlbumPhotos from "../components/AlbumPhotos.astro";
+import ButtonLink from "../components/ButtonLink.astro";
+import ContactDetails from "../components/ContactDetails.astro";
+import DateDetails from "../components/DateDetails.astro";
+import Heading1 from "../components/Heading1.astro";
+import Heading2 from "../components/Heading2.astro";
+import Jumbotron from "../components/Jumbotron.astro";
+import ModeratorsDetails from "../components/ModeratorsDetails.astro";
+import Paragraph from "../components/Paragraph.astro";
+import PriceDetails from "../components/PriceDetails.astro";
+import SpeakersDetails from "../components/SpeakersDetails.astro";
+import AlbumContainerLarge from "../layouts/Album/AlbumContainer-Large.astro";
+import AlbumContainerSmall from "../layouts/Album/AlbumContainer-Small.astro";
+import AlbumContainer from "../layouts/Album/AlbumContainer.astro";
+import ButtonContainer from "../layouts/Button/ButtonContainer.astro";
+import ContactContainer from "../layouts/Contact/ContactContainer.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import ModeratorContainer from "../layouts/Moderator/ModeratorContainer.astro";
+import PriceContainer from "../layouts/Price/PriceContainer.astro";
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <Jumbotron 
+            src="/jumbotron/committee.webp"
+            alt="Seminar Jumbotron"
+        />
+        <Container>
+            <Paragraph
+                paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi quos, laudantium amet nobis consectetur cupiditate excepturi quibusdam ducimus molestiae quisquam est mollitia veniam aliquid repudiandae harum culpa consequatur! Reiciendis nihil consectetur voluptate consequatur, molestiae facere perspiciatis neque vero itaque atque deserunt voluptatem fuga porro? Laboriosam quaerat iure quasi est reprehenderit amet iusto aut, aliquid exercitationem repudiandae, neque illo. Delectus mollitia et eveniet cum optio nobis, quam vero dolores, vitae corporis dolorem quasi minima iure dolor corrupti veniam quos, eius earum maiores eligendi ducimus suscipit modi placeat? Fugit aliquid suscipit architecto debitis minus, corrupti dolore ad facere atque exercitationem pariatur labore error sequi iure doloremque quam. Tempora, cum officia voluptas odit modi molestiae laboriosam repellat, voluptates accusamus facilis recusandae excepturi placeat architecto mollitia porro ab eveniet, quaerat deleniti magni beatae! Iste dignissimos necessitatibus, dolore quidem aliquid ab consequatur doloribus quas commodi praesentium mollitia deserunt obcaecati, neque modi provident eligendi tempora laboriosam itaque. Tempora, vel. Hic nisi minus provident, alias recusandae cum, quidem amet illum dolore commodi, harum delectus consequatur. Facilis iure neque recusandae illo sit quis modi ab eius facere quaerat dolor iste aut veritatis nemo id ratione ea eaque corporis, eveniet quia tempore veniam temporibus mollitia sunt? Esse odit culpa molestias doloribus laborum saepe, eum aperiam, rem repellat illum sed iure quisquam tempora. Quisquam libero eos non. Cumque, repellat, quasi perspiciatis libero natus illum vitae consequatur repudiandae id tenetur at quod nam laudantium rem quia quaerat laboriosam cum blanditiis accusantium. Veniam obcaecati ipsa maxime libero ab, exercitationem soluta necessitatibus."
+            />
+        </Container>
+        <Container class="">
+            <Heading1 text="Opening Remarks" />
+            <ModeratorContainer>
+                <ModeratorsDetails
+                    src="/narasumber/Prof.Aris.png"
+                    alt="Prof. Aris"
+                    name="Prof. Dr. Ir. Arissetyanto Nugroho, M.M., IPU., CMA., MSS."
+                    description="Chairman of Jakarta Indonesia Education Development Foundation (Yayasan Pengembangan Pendidikan Indonesia Jakarta)"
+                />
+                <ModeratorsDetails
+                    src="/narasumber/Prof.Pramono.png"
+                    alt="Prof. Dr. Pramono"
+                    name="Prof. Dr. Pramono Hari Adi, M.S."
+                    description="Rector of Trilogi University"
+                />
+                <ModeratorsDetails
+                    src="/narasumber/Moh.Mahsun.png"
+                    alt="Mohamad Mahsun"
+                    name="Mohamad Mahsun, S.E., M.Si., Ak., CA., CPA., CFrA., CertIPSAS., CPI., Ph.D."
+                    description="Chairman of Association of Public Sector Accounting Educators (APSAE)"
+                />
+                <ModeratorsDetails
+                    src="/narasumber/Prof.Dian.png"
+                    alt="Prof. Dr. Dian"
+                    name="Prof. Dr. Dian Agustia, S.E., M.Si., Ak., CIMA., CA."
+                    description="Head of the Indonesian Accountants Association Educator Accountant Compartment (IAIKAPd)"
+                />
+            </ModeratorContainer>
+        </Container>
+        <Container class="">
+            <Heading1 text="Keynote Speech" />
+        <ModeratorContainer>
+            <ModeratorsDetails
+            src="/narasumber/Dr.Hery.png"
+            alt="Dr. Hey"
+            name="Dr. Hery Subowo S.E., MPM., Ak., CA, CPA, CSFA., CIA., Ak., CFrA., CFE."
+            description="President ACFE Indonesia Chapter 2022-2024"
+            />
+        </ModeratorContainer>
+        </Container>
+        <Container class="">
+            <Heading1 text="Speakers" />
+            <SpeakersDetails
+                src="/narasumber/Prof.Dr.Sylvia.png"
+                alt="Prof. Dr. Sylvia"
+                name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
+                description="Professor of the Department of Accounting Faculty of Economics and Business, University of Indonesia"
+            />
+            <SpeakersDetails
+                src="/narasumber/Prof.Ritchi.png"
+                alt="Prof. Hamzah"
+                name="Prof. Dr. rer. pol. Hamzah Ritchi, CA."
+                description="Profesor in AIS and Digital Innovation Faculty of Economics and Business, Padjadjaran University"
+            />
+            <SpeakersDetails
+                src="/narasumber/Denny.png"
+                alt="Prof. Hamzah"
+                name="Denny Vissaro, S.E., M.S.E., M.A., ADIT."
+                description="Manager of Fiscal Research & Advisory at DDTC"
+            />
+            <SpeakersDetails
+                src="/narasumber/Oluwatoyin.png"
+                alt="Oluwatoyin"
+                name="Oluwatoyin Muse Johnson Popoola, JP, Ph.D., MBA PGDAF., HDipl., RPA., Member INSOL International., AM(M)., CFA., FCTI., FCA."
+                description="Institute of Chartered Accountants of Nigeria (ICAN), International Lecturer (Senior) Tunku Puteri Intan Safinaz School of Accountancy (TISSA-UUM) College of Business, Universiti Utara Malaysia"
+            />
+            <SpeakersDetails
+                src="/narasumber/Dr.Jamaludin.png"
+                alt="Dr. Jamaludin"
+                name="Dr. Jamaludin Iskak, M.Si., Ak., CA., CPA., CPI., ASEAN, CPA."
+                description="Managing Partner Jamaludin, Ardi, Sukimto & Partners (JAS) Public Accountant Firm - Member of Auditrust International"
+            />
+            <SpeakersDetails
+                src="/narasumber/ZubirAzhar.png"
+                alt="Zubir Azhar"
+                name="Zubir Azhar, Ph.D., FCPA., CA., ACPA."
+                description="Chairperson (Accounting) - Senior Lecturer School of Management, Universiti Sains Malaysia"
+            />
+            <SpeakersDetails
+                src="/narasumber/Dr.Sigid.png"
+                alt="Dr. Sigid"
+                name="Dr. Sigid Eko Pramono, S.E.Ak., MIBA., CA."
+                description="Initiator of Islamic Boarding School Accounting Guidelines, Senior Economist Bank of Indonesia 2016-2021"
+            />
+            <SpeakersDetails
+                src="/narasumber/Donny.png"
+                alt="Donny Hamdani"
+                name="Donny Hamdani, S.E., Ak."
+                description="Director of Finance PT Penjaminan Infrastruktur Indonesia (Persero)"
+            />
+            <SpeakersDetails
+                src="/narasumber/Nemoto.png"
+                alt="Prof. Masatsugu"
+                name="Prof. Masatsugu Nemoto"
+                description="Research Professor, International Development Institute (IDI) Chungbuk National University, South Korea"
+            />
+        </Container>
+        <Container>
+            <Heading1 text="Moderator" />
+            <ModeratorContainer>
+                <ModeratorsDetails
+                    src="/moderator/Dr.Nurul.png"
+                    name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
+                    description="Lecturer in the Trilogi University Accounting Study Program"
+                    alt="Dr. Nurul"
+                />
+                <ModeratorsDetails
+                    src="/moderator/Dr.Anies.png"
+                    name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.St., CA."
+                    description="Deputy Chancellor for Learning and Student Affairs & Lecturer in the Trilogi University Accounting Study Program"
+                    alt="Dr. Anies"
+                />
+            </ModeratorContainer>
+        </Container>
+
+        <Container>
+            <Heading1 text="Date" />
+            <DateDetails
+                timeline="Panel Session 1 - Hybrid"
+                date="2 February 2023"
+                time="08:00 - 12:00 (UTC+7)"
+            />
+            <DateDetails
+                timeline="Panel Session 2 - Virtual"
+                date="2 February 2023"
+                time="13:00 - 17:00 (UTC+7)"
+            />
+        </Container>
+
+        <Container>
+            <Heading1 text="Price" />
+            <PriceContainer>
+                <PriceDetails
+                    category="Hybrid - Presenter and Seminar"
+                    price="IDR 400,000"
+                />
+                <PriceDetails
+                    category="Virtual - Presenter and Seminar"
+                    price="IDR 300,000"
+                />
+                <PriceDetails category="Hybrid - Seminar" price="IDR 250,000" />
+                <PriceDetails
+                    category="Virtual - Seminar"
+                    price="IDR 150,000"
+                />
+            </PriceContainer>
+            <ButtonContainer>
+                <ButtonLink
+                    href="https://www.ncafatrilogi.id/eventregistry"
+                    class="bi bi-person-fill-add"
+                    title="Seminar Registration"
+                    description="Click this button to regist this seminar."
+                />
+            </ButtonContainer>
+        </Container>
+
+        <Container>
+            <Heading1 text="Contact Us" />
+            <ContactContainer>
+                <ContactDetails
+                    media="WhatsApp"
+                    text="0812 8842 5931 (Zakiah)"
+                    text2="   "
+                    href="https://wa.me/6281288425931"
+                />
+                <ContactDetails
+                    media="Email"
+                    text="fourthncafa@gmail.com"
+                    text2="   "
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+                />
+                <ContactDetails
+                    media="Instagram"
+                    text="@akuntansi.trilogi"
+                    text2="   "
+                    href="https://instagram.com/akuntansi.trilogi"
+                />
+            </ContactContainer>
+        </Container>
+    </main>
+</Layout>
