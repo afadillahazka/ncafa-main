@@ -1,0 +1,66 @@
+---
+import AlbumPhotos from '../components/AlbumPhotos.astro';
+import Heading2 from '../components/Heading2.astro';
+import AlbumContainerMedium from '../layouts/Album/AlbumContainer-Medium.astro';
+import AlbumContainer from '../layouts/Album/AlbumContainer.astro';
+import Container from '../layouts/Container.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Co-Host"/>
+                <AlbumContainerMedium>
+                    <AlbumPhotos 
+						src="/cohost/dutawacana.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/esaunggul.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ipwija.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/pancasila.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/tazkia.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/trisakti.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/uai.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubaya.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubhara.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubl.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/untar.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    
+                </AlbumContainerMedium>
+            </AlbumContainer>
+		</Container>
+
+	</main>
+</Layout>
