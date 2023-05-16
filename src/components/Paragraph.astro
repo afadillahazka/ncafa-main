@@ -5,8 +5,14 @@ export interface Props {
 
 const {paragraph} = Astro.props
 ---
-<div class="py-4">
-    <p class="display-7 ">
+<div class="py-2 d-flex justify-content-center align-items-center">
+    <p class="fs-4 ln-lg">
         {paragraph}
     </p>
 </div>
+
+<style>
+    div {
+        min-height: 50vh;
+    }
+</style>

@@ -1,0 +1,25 @@
+---
+export interface Props {
+    paragraph: string;
+}
+
+const {paragraph} = Astro.props
+---
+<div class="py-2">
+    <p class="display-6 ln-4">
+        {paragraph}
+    </p>
+</div>
+
+<style>
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 100px;
+    }
+</style>

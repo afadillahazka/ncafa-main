@@ -36,7 +36,6 @@ const { src, alt } = Astro.props;
 
     // set initial blur and scale values
     let blurValue = 0;
-    let scaleValue = 1;
 
     // listen for the scroll event
     window.addEventListener("scroll", () => {
@@ -45,10 +44,8 @@ const { src, alt } = Astro.props;
 
         // calculate the new blur and scale values
         blurValue = scrollPos / 50;
-        scaleValue = 1 + scrollPos / 10000;
 
         // apply the new CSS styles to the image
         img.style.filter = `blur(${blurValue}px)`;
-        img.style.transform = `scale(${scaleValue})`;
     });
 </script>
