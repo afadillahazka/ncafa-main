@@ -23,9 +23,11 @@ import PriceContainer from '../layouts/Price/PriceContainer.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Jumbotron 
-            src="/jumbotron/main.webp"
-            alt="Seminar Jumbotron"
-        />
+		<picture>
+            <source media="(min-width:650px)" srcset="/jumbotron/news-desktop.png">
+            <source media="(max-width:465px)" srcset="/jumbotron/news-mobile.png">
+            <img class="img-fluid" src="/jumbotron/news-mobile.png" alt="Flowers" style="width:auto;">
+          </picture>
+          
 	</main>
 </Layout>
