@@ -6,6 +6,7 @@ import DateDetails from '../components/DateDetails.astro';
 import Heading1 from '../components/Heading1.astro';
 import Heading2 from '../components/Heading2.astro';
 import Jumbotron from '../components/Jumbotron.astro';
+import Jumbotron2 from '../components/Jumbotron2.astro';
 import ModeratorsDetails from '../components/ModeratorsDetails.astro';
 import Paragraph from '../components/Paragraph.astro';
 import PriceDetails from '../components/PriceDetails.astro';
@@ -21,13 +22,12 @@ import ModeratorContainer from '../layouts/Moderator/ModeratorContainer.astro';
 import PriceContainer from '../layouts/Price/PriceContainer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="News">
 	<main>
-		<picture>
-            <source media="(min-width:650px)" srcset="/jumbotron/news-desktop.png">
-            <source media="(max-width:465px)" srcset="/jumbotron/news-mobile.png">
-            <img class="img-fluid" src="/jumbotron/news-mobile.png" alt="Flowers" style="width:auto;">
-          </picture>
-          
+    <Jumbotron2
+    srcdesktop="/jumbotron/news-desktop.webp"
+    srcmobile="/jumbotron/news-mobile.webp"
+    alt="News"
+/>
 	</main>
 </Layout>

@@ -1,16 +1,18 @@
 ---
 import ContactDetails from '../components/ContactDetails.astro';
 import Jumbotron from '../components/Jumbotron.astro';
+import Jumbotron2 from '../components/Jumbotron2.astro';
 import ContactContainerFH from '../layouts/Contact/ContactContainerFH.astro';
 import Container from '../layouts/Container.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Contact">
 	<main>
-        <Jumbotron 
-            src="/jumbotron/contactus.webp"
-            alt="Seminar Jumbotron"
+        <Jumbotron2
+            srcdesktop="/jumbotron/contactus-desktop.webp"
+            srcmobile="/jumbotron/contactus-mobile.webp"
+            alt="Contact Us"
         />
 		<Container>
             <ContactContainerFH>
