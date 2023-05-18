@@ -1,0 +1,25 @@
+---
+export interface Props {
+    sor: string
+    class: string
+}
+
+const { sor, class: className } = Astro.props 
+---
+
+<div class="col py-3 text-center d-flex flex-column justify-content-center align-item-start">
+    <i class={className}></i>
+    <h3 class="fs-2 fw-light">{ sor }</h3>
+</div>
+
+<style>
+    div {
+        min-height: 200px;
+    }
+
+    @media screen and (max-width: 426px) {
+        div {
+            min-height: 100px;
+        }
+    }
+</style>

@@ -11,6 +11,8 @@ import Jumbotron2 from "../components/Jumbotron2.astro";
 import ModeratorsDetails from "../components/ModeratorsDetails.astro";
 import Paragraph from "../components/Paragraph.astro";
 import PriceDetails from "../components/PriceDetails.astro";
+import SORContainer from "../components/SORContainer.astro";
+import ScopeofResearch from "../components/ScopeofResearch.astro";
 import SpeakersDetails from "../components/SpeakersDetails.astro";
 import AlbumContainerLarge from "../layouts/Album/AlbumContainer-Large.astro";
 import AlbumContainerSmall from "../layouts/Album/AlbumContainer-Small.astro";
@@ -38,7 +40,44 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
 
         <Container>
             <Heading1 text="Scope of Research" />
-            
+            <SORContainer>
+                <ScopeofResearch
+                    sor="Financial Accounting and Capital Markets"
+                    class="fa-solid fa-money-bill-trend-up fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Management and Behavioral Accounting"
+                    class="fa-solid fa-bars-progress fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Public Sector Accounting"
+                    class="fa-solid fa-user fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Sharia Accounting"
+                    class="fa-solid fa-star-and-crescent fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Fraud and Forensic Accounting"
+                    class="fa-solid fa-building-shield fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Accounting Education"
+                    class="fa-solid fa-graduation-cap fa-2xl pb-4 "
+                />
+                <ScopeofResearch
+                    sor="Taxation"
+                    class="fa-solid fa-receipt fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Information Systems, Auditing, and Professional Ethics "
+                    class="fa-solid fa-sitemap fa-2xl pb-4"
+                />
+                <ScopeofResearch
+                    sor="Governance & Sustainability Accounting"
+                    class="fa-solid fa-users-between-lines fa-2xl pb-4"
+                />
+            </ContactContainer>
         </Container>
 
         <Container>
@@ -93,33 +132,56 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
             <ButtonContainer>
                 <ButtonLink
                     href="https://www.ncafatrilogi.id/eventregistry"
-                    class="bi bi-person-fill-add"
+                    class="fa-solid fa-user-plus"
                     title="Paper Registration"
                     description="Click this button to regist this call for paper."
                 />
             </ButtonContainer>
         </Container>
+        <Container>
+            <Heading2
+                text="Paper Template"
+            />
+            <ButtonContainer>
+                <ButtonLink
+                    href="https://drive.google.com/uc?export=download&id=1zyFj2uHUzykWw_QIfSqejXENNNkJ_Mt0"
+                    class="fa-solid fa-download"
+                    title="Abstract Template"
+                    description="Click this button to download abstract template."
+                />
+                <ButtonLink
+                    href="https://drive.google.com/uc?export=download&id=1qxMLBSddEV-yHhbruFKv3zDBVKwSMz0Q"
+                    class="fa-solid fa-download"
+                    title="Full Paper Template"
+                    description="Click this button to download full paper template."
+                />
+            </ButtonContainer>
+        </Container>
 
         <Container>
-            <Heading1 text="Contact Us" />
+            <Heading2 text="Contact Us" />
             <ContactContainer>
                 <ContactDetails
                     media="WhatsApp"
-                    text="0812 8842 5931 (Zakiah)"
+                    text="0812 8287 0852 (Dinda)"
                     text2="   "
-                    href="https://wa.me/6281288425931"
+                    href="https://wa.me/6281282870852"
+                    class="fa-brands fa-whatsapp fa-2xl pb-4"
                 />
                 <ContactDetails
                     media="Email"
-                    text="fourthncafa@gmail.com"
+                    text="fourthncafa.paper@gmail.com"
                     text2="   "
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+                    class="fa-regular fa-envelope fa-2xl pb-4"
+
                 />
                 <ContactDetails
                     media="Instagram"
                     text="@akuntansi.trilogi"
                     text2="   "
                     href="https://instagram.com/akuntansi.trilogi"
+                    class="fa-brands fa-instagram fa-2xl pb-4"
                 />
             </ContactContainer>
         </Container>
