@@ -1,5 +1,6 @@
 ---
 import AlbumPhotos from '../components/AlbumPhotos.astro';
+import AlbumPhotosSmall from '../components/AlbumPhotosSmall.astro';
 import ButtonLink from '../components/ButtonLink.astro';
 import ContactDetails from '../components/ContactDetails.astro';
 import DateDetails from '../components/DateDetails.astro';
@@ -11,6 +12,7 @@ import ModeratorsDetails from '../components/ModeratorsDetails.astro';
 import Paragraph from '../components/Paragraph.astro';
 import PriceDetails from '../components/PriceDetails.astro';
 import SpeakersDetails from '../components/SpeakersDetails.astro';
+import AlbumContainerExtraSmall from '../layouts/Album/AlbumContainer-ExtraSmall.astro';
 import AlbumContainerLarge from '../layouts/Album/AlbumContainer-Large.astro';
 import AlbumContainerSmall from '../layouts/Album/AlbumContainer-Small.astro';
 import AlbumContainer from '../layouts/Album/AlbumContainer.astro';
@@ -29,5 +31,58 @@ import PriceContainer from '../layouts/Price/PriceContainer.astro';
             srcmobile="/jumbotron/main-mobile.webp"
             alt="Main"
         />
+        <Container>
+            <Paragraph
+                paragraph="2023 is the fourth year of holding NCAFA and the first year of InCAFA which will be held in a hybrid manner; offline at Trilogi University Auditorium, Jakarta and online through Zoom Cloud Meetings. This InCAFA & NCAFA activity will have an important influence on Trilogi University in establishing scientific communication with academics, business practitioners and public sector actors because the research results presented in accounting cover various studies, including Financial Accounting and Capital Markets (AKPM), Accounting Management and Behavior (AKMK), Information Systems, Auditing, and Professional Ethics (SIAEP), Taxation (PPJK), Sharia Accounting (AKSR), Governance and Sustainability Accounting (TKSA), Fraud and Forensic Accounting (FFA), Public Sector Accounting (ASP), and Accounting Education (PAk)."
+            />
+        </Container>
+        <Container>
+            <Heading1 text="Date" />
+            <DateDetails
+                timeline="Session 1 - Hybrid"
+                date="Wednesday, 2 February 2023"
+                time="Auditorium Hall, 2nd Floor - Trilogi University"
+            />
+            <DateDetails
+                timeline="Session 2 - Virtual"
+                date="Thursday, 3 February 2023"
+                time="Zoom Cloud Meetings"
+            />
+        </Container>
+        <Container>
+            <Heading1 text="Contact Us" />
+            <ContactContainer>
+                <ContactDetails
+                    media="WhatsApp"
+                    text="0812 8842 5931 (Zakiah)"
+                    text2="   "
+                    href="https://wa.me/6281288425931"
+                />
+                <ContactDetails
+                    media="Email"
+                    text="fourthncafa@gmail.com"
+                    text2="   "
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+                />
+                <ContactDetails
+                    media="Instagram"
+                    text="@akuntansi.trilogi"
+                    text2="   "
+                    href="https://instagram.com/akuntansi.trilogi"
+                />
+            </ContactContainer>
+        </Container>
+        <Container>
+            <AlbumContainer>
+                <Heading2 text="Organized by"/>
+				<AlbumContainerSmall>
+                    <AlbumPhotos 
+                    src="/eventorganizer/himaksitrilogi.png"
+                    alt="HIMAKSI Trilogi"
+					/>
+				</AlbumContainerSmall>
+			</AlbumContainer>
+        </Container>
+        
 	</main>
 </Layout>
