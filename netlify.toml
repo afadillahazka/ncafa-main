@@ -1,3 +1,4 @@
 [[redirects]]
-from = "/"
+from = "dev.ncafatrilogi.id/"
 to = "https://fourth.ncafatrilogi.id/"
+force = true
