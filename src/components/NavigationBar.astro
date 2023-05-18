@@ -150,4 +150,18 @@
     .fs-7 {
         font-size: 12px;!important
     }
+
+    .active-ncafa {
+        border: none;
+        outline: none;
+        padding: 0.2!important;
+        background-color: #f7a224!important;
+        cursor: pointer;
+        border-radius: 25px;
+    }
 </style>
+
+<script>
+    var activeNavlink = document.querySelectorAll('li a[href^="/' + location.pathname.split("/")[1] + '"]');
+activeNavlink[0].classList.add('active-ncafa');
+</script>
