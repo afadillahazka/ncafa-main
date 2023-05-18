@@ -1,52 +1,52 @@
 ---
-import ContactDetails from '../components/ContactDetails.astro';
-import Jumbotron from '../components/Jumbotron.astro';
-import Jumbotron2 from '../components/Jumbotron2.astro';
-import ContactContainerFH from '../layouts/Contact/ContactContainerFH.astro';
-import Container from '../layouts/Container.astro';
-import Layout from '../layouts/Layout.astro';
+import ContactDetails from "../components/ContactDetails.astro";
+import Jumbotron from "../components/Jumbotron.astro";
+import Jumbotron2 from "../components/Jumbotron2.astro";
+import ContactContainerFH from "../layouts/Contact/ContactContainerFH.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contact">
-	<main>
+    <main>
         <Jumbotron2
             srcdesktop="/jumbotron/contactus-desktop.webp"
             srcmobile="/jumbotron/contactus-mobile.webp"
             alt="Contact Us"
         />
-		<Container>
+        <Container>
             <ContactContainerFH>
-                <ContactDetails 
+                <ContactDetails
                     media="Call for Paper"
-                    href="https://www.instagram.com"
-                    text="+62 851 5618 1049 (Aditya)"
+                    href="https://wa.me/6281282870852"
+                    text="+62 812-8287-0852 (Dinda)"
                     text2=""
                 />
-                <ContactDetails 
+                <ContactDetails
                     media="Seminar"
-                    href="https"
-                    text="+62 851 5618 1049 (Aditya)"
+                    href="https://wa.me/6281288425931"
+                    text="+62 812-8842-5931 (Zakiah)"
                     text2=""
                 />
-                <ContactDetails 
+                <ContactDetails
                     media="Co-Host"
-                    href="https"
-                    text="+62 851 5618 1049 (Aditya)"
+                    href="https://wa.me/6285892664516"
+                    text="+62 858-9266-4516 (Annisa)"
                     text2=" "
-                    />
-                <ContactDetails 
+                />
+                <ContactDetails
+                    media="Journal Partnership"
+                    href="https://wa.me/6285694468452"
+                    text="+62 856-9446-8452 (Nabiilah)"
+                    text2=" "
+                />
+                <ContactDetails
                     media="Sponsorship"
-                    href="https"
-                    text="+62 851 5618 1049 (Aditya)"
+                    href="https://wa.me/6281213671822"
+                    text="+62 812-1367-1822 (Galluh)"
                     text2=" "
-                    />
-                <ContactDetails 
-                    media="Partnership"
-                    href="https"
-                    text="+62 851 5618 1049 (Aditya)"
-                    text2=" "
-                    />
+                />
             </ContactContainerFH>
-		</Container>
-	</main>
+        </Container>
+    </main>
 </Layout>
