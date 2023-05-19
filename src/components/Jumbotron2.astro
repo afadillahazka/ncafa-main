@@ -10,5 +10,5 @@ const {srcdesktop, srcmobile, alt} = Astro.props
 <picture>
     <source media="(min-width:650px)" srcset={srcdesktop}>
     <source media="(max-width:465px)" srcset={srcmobile}>
-    <img class="img-fluid lazy" src={srcmobile} alt={alt} style="width:auto;">
+    <img class="img-fluid lazy" src={srcmobile} alt={alt} style="width:auto;" fetchpriority="high">
   </picture>
