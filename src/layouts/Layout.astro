@@ -58,6 +58,20 @@ const { title } = Astro.props;
 			overflow-x: hidden;
 			max-width: 100%;
 		}
+
+		*::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		*::-webkit-scrollbar-track {
+			background: #e6e6e6;
+		}
+
+		*::-webkit-scrollbar-thumb {
+			background-color: #828282;
+			border-radius: 10px;
+			border: 3px none #ffffff;
+		}
 	  </style>
 </html>
 
