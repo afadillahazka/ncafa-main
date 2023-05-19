@@ -20,8 +20,8 @@ export default defineConfig({
     }), 
     defaultPrerender(), 
     webmanifest({
-      name: '4th NCAFA Trilogi',
-      short_name: '4th NCAFA',
+      name: 'NCAFA Trilogi',
+      short_name: 'NCAFA',
       description: 'National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah  konferensi tingkat  nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar.',
       theme_color: "#47A2C6",
       background_color: '#ffffff',

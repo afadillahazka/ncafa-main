@@ -6,7 +6,7 @@ export interface Props {
 const {paragraph} = Astro.props
 ---
 <div class="py-2 d-flex justify-content-center align-items-center">
-    <p id="paragraph" class=" ln-lg">
+    <p id="paragraph" class="fs-5 ln-lg">
         {paragraph}
     </p>
 </div>
@@ -31,14 +31,14 @@ const {paragraph} = Astro.props
 //   }
 // });
 
-window.addEventListener('resize', function() {
-  var screenWidth = window.innerWidth;
-  var paragraphElement = document.getElementById('paragraph');
+// window.addEventListener('resize', function() {
+//   var screenWidth = window.innerWidth;
+//   var paragraphElement = document.getElementById('paragraph');
 
-  if (screenWidth <= 426) {
-    paragraphElement.style.fontSize = '12px';
-  } else {
-    paragraphElement.style.fontSize = '24px';
-  }
-});
+//   if (screenWidth <= 426) {
+//     paragraphElement.style.fontSize = '12px';
+//   } else {
+//     paragraphElement.style.fontSize = '24px';
+//   }
+// });
 </script>

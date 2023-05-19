@@ -36,6 +36,10 @@ const { title } = Astro.props;
 			type="image/svg+xml"
 			href="/icon/ncafa-icon.webp"
 		/>
+		<meta
+			name="google-site-verification"
+			content="i_EDZW9Fii_-OtvUS7Yqknu_MgKiWw1atli-cLFG6R8"
+		/>
 	</head>
 
 	<body>
@@ -46,9 +50,19 @@ const { title } = Astro.props;
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous">
+		</script>
 		<script src="https://kit.fontawesome.com/36090d8799.js" crossorigin="anonymous"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0M8Q86CBNK"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-0M8Q86CBNK");
+    </script>
 		<ScrolltoTop/>
 	</body>
 	<style>
