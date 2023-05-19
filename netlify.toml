@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://ncafatrilogi.id/*"
+  to = "https://fourth.ncafatrilogi.id/:splat"
+  status = 301
+  force = true
