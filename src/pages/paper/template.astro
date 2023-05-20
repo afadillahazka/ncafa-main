@@ -1,0 +1,29 @@
+---
+import ButtonLink from '../../components/ButtonLink.astro';
+import Heading2 from '../../components/Heading2.astro';
+import ButtonContainer from '../../layouts/Button/ButtonContainer.astro';
+import Container from '../../layouts/Container.astro';
+import Layout2 from '../../layouts/Layout2.astro';
+---
+
+<Layout2 title="Paper Template">
+	<main>
+        <Container>
+            <Heading2 text="Paper Template"/>
+            <ButtonContainer>
+                <ButtonLink
+                    href="https://drive.google.com/uc?export=download&id=1zyFj2uHUzykWw_QIfSqejXENNNkJ_Mt0"
+                    class="fa-solid fa-download"
+                    title="Abstract Template"
+                    description="Click this button to download abstract template."
+                />
+                <ButtonLink
+                    href="https://drive.google.com/uc?export=download&id=1qxMLBSddEV-yHhbruFKv3zDBVKwSMz0Q"
+                    class="fa-solid fa-download"
+                    title="Full Paper Template"
+                    description="Click this button to download full paper template."
+                />
+            </ButtonContainer>
+        </Container>
+	</main>
+</Layout>
