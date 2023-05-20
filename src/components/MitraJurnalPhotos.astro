@@ -14,16 +14,17 @@ const { src, alt } = Astro.props
             width="70%"
             height="70%"
             class="lazy"
-            data-bs-toggle="tooltip" data-bs-placement="top"
             title={alt} 
         />
     </div>
 </div>
 
 
-<script>
+<!-- <script>
+    data-bs-toggle="tooltip" data-bs-placement="top"
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-</script>
+</script> -->
