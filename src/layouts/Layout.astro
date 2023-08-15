@@ -40,10 +40,6 @@ const { title } = Astro.props;
 			name="google-site-verification"
 			content="i_EDZW9Fii_-OtvUS7Yqknu_MgKiWw1atli-cLFG6R8"
 		/>
-		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	  	/>
 	</head>
 
 	<body>
@@ -67,31 +63,6 @@ const { title } = Astro.props;
 
 			gtag("config", "G-0M8Q86CBNK");
     </script>
-	<script>
-		function addClassOnScroll(className, targetClassName) {
-			const elements = document.getElementsByClassName(targetClassName);
-
-			function handleScroll() {
-				for (let i = 0; i < elements.length; i++) {
-					const element = elements[i];
-					const rect = element.getBoundingClientRect();
-					const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-
-					if (isVisible) {
-						element.classList.add(className);
-					} else {
-						element.classList.remove(className);
-					}
-				}
-			}
-
-			window.addEventListener('scroll', handleScroll);
-		}
-
-		// Usage example
-		addClassOnScroll('animate__fadeIn', 'animate__animated');
-
-	</script>
 		<ScrolltoTop/>
 	</body>
 	<style>
