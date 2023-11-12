@@ -2,6 +2,7 @@
 import AlbumPhotos from "../components/AlbumPhotos.astro";
 import ButtonLink from "../components/ButtonLink.astro";
 import ButtonLinkDisable from "../components/ButtonLinkDisable.astro";
+import ComingSoon from "../components/ComingSoon.astro";
 import ContactDetails from "../components/ContactDetails.astro";
 import DateDetails from "../components/DateDetails.astro";
 import Heading1 from "../components/Heading1.astro";
@@ -21,6 +22,7 @@ import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
 import ModeratorContainer from "../layouts/Moderator/ModeratorContainer.astro";
 import PriceContainer from "../layouts/Price/PriceContainer.astro";
+import ComingSoon from "../components/ComingSoon.astro";
 ---
 
 <Layout title="Seminar">
@@ -38,7 +40,8 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
         <Container class="">
             <Heading1 text="Opening Remarks" />
             <ModeratorContainer>
-                <ModeratorsDetails
+                <ComingSoon/>
+                <!-- <ModeratorsDetails
                     src="/narasumber/Prof.Aris.png"
                     alt="Prof. Aris"
                     name="Prof. Dr. Ir. Arissetyanto Nugroho, M.M., IPU., CMA., MSS."
@@ -61,23 +64,25 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
                     alt="Prof. Dr. Dian"
                     name="Prof. Dr. Dian Agustia, S.E., M.Si., Ak., CIMA., CA."
                     description="Head of the Indonesian Accountants Association Educator Accountant Compartment (IAIKAPd)"
-                />
+                /> -->
             </ModeratorContainer>
         </Container>
         <Container class="">
             <Heading1 text="Keynote Speech" />
         <ModeratorContainer>
-            <ModeratorsDetails
+            <ComingSoon/>
+            <!-- <ModeratorsDetails
             src="/narasumber/Dr.Hery.png"
             alt="Dr. Hey"
             name="Dr. Hery Subowo S.E., MPM., Ak., CA, CPA, CSFA., CIA., Ak., CFrA., CFE."
             description="President ACFE Indonesia Chapter 2022-2024"
-            />
+            /> -->
         </ModeratorContainer>
         </Container>
         <Container class="">
             <Heading1 text="Speakers" />
-            <SpeakersDetails
+            <ComingSoon/>
+            <!-- <SpeakersDetails
                 src="/narasumber/Prof.Dr.Sylvia.png"
                 alt="Prof. Dr. Sylvia"
                 name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
@@ -130,12 +135,13 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
                 alt="Prof. Masatsugu"
                 name="Prof. Masatsugu Nemoto"
                 description="Research Professor, International Development Institute (IDI) Chungbuk National University, South Korea"
-            />
+            /> -->
         </Container>
         <Container>
             <Heading1 text="Moderator" />
             <ModeratorContainer>
-                <ModeratorsDetails
+                <ComingSoon/>
+                <!-- <ModeratorsDetails
                     src="/moderator/Dr.Nurul.png"
                     name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
                     description="Lecturer in the Trilogi University Accounting Study Program"
@@ -146,7 +152,7 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
                     name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.St., CA."
                     description="Deputy Chancellor for Learning and Student Affairs & Lecturer in the Trilogi University Accounting Study Program"
                     alt="Dr. Anies"
-                />
+                /> -->
             </ModeratorContainer>
         </Container>
 
@@ -154,13 +160,13 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
             <Heading1 text="Date" />
             <DateDetails
                 timeline="Panel Session 1 - Hybrid"
-                date="Wednesday, 2 February 2023"
-                time="08:00 - 12:00 (UTC+7)"
+                date="Wednesday, 14 February 2024"
+                time="COMING SOON"
             />
             <DateDetails
                 timeline="Panel Session 2 - Virtual"
-                date="Thursday, 3 February 2023"
-                time="13:00 - 17:00 (UTC+7)"
+                date="Thursday, 15 February 2024"
+                time="COMING SOON"
             />
         </Container>
 
@@ -169,21 +175,23 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
             <PriceContainer>
                 <PriceDetails
                     category="Hybrid - Presenter and Seminar"
-                    price="IDR 400,000"
+                    price="COMING SOON"
                 />
                 <PriceDetails
                     category="Virtual - Presenter and Seminar"
-                    price="IDR 300,000"
+                    price="COMING SOON"
                 />
-                <PriceDetails category="Hybrid - Seminar" price="IDR 250,000" />
+                <PriceDetails 
+                    category="Hybrid - Seminar" 
+                    price="COMING SOON" />
                 <PriceDetails
                     category="Virtual - Seminar"
-                    price="IDR 150,000"
+                    price="COMING SOON"
                 />
             </PriceContainer>
             <ButtonContainer>
                 <ButtonLinkDisable
-                    href="https://www.ncafatrilogi.id/eventregistry"
+                    href=""
                     class="fa-solid fa-user-plus"
                     title="Seminar Registration"
                     description="Click this button to regist this seminar."
@@ -204,9 +212,9 @@ import PriceContainer from "../layouts/Price/PriceContainer.astro";
                 />
                 <ContactDetails
                     media="Email"
-                    text="fourthncafa@gmail.com"
+                    text="inc-ncafa@trilogi.ac.id"
                     text2="   "
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=inc-ncafa@trilogi.ac.id"
                     class="fa-regular fa-envelope fa-2xl py-3"
 
                 />

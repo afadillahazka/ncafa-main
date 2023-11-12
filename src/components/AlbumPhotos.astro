@@ -6,7 +6,7 @@ export interface Props {
 
 const { src, alt } = Astro.props
 ---
-<div class="col">
+<div class="col" data-aos="fade-up">
     <div>
         <img
             src={ src }
@@ -15,7 +15,6 @@ const { src, alt } = Astro.props
             height="100%"
             data-bs-toggle="tooltip" data-bs-placement="top"
             title={alt} 
-            class="animate__animated"
         />
     </div>
 </div>
